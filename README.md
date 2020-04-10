@@ -1,6 +1,6 @@
-# quotes
+# Daily Quotes
 
-> My legendary Nuxt.js project
+> Get Daily Quotes or generate new one.
 
 ## Build Setup
 
@@ -18,5 +18,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
