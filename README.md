@@ -6,10 +6,6 @@
 
 ![Daily Quotes, version 1](assets/Templates/v1.png)
 
-## :2nd_place_medal: Version 2
-
-![Daily Quotes, version 2](assets/Templates/v1.png)
-
 > After a poll on instagram, the most prefer the first version.
 
 ## Build Setup
