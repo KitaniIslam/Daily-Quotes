@@ -1,72 +1,60 @@
-<template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        quotes
-      </h1>
-      <h2 class="subtitle">
-        My legendary Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+<template> 
+  <div class="root-container">
+      <navbar class="navbar" />
+      <h1 class="bg-quotes">Quotes</h1>
+      <h1 class="bg-daily">Daily</h1>
+    <div class="container">
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
+import Navbar from '~/components/Navbar.vue'
 export default {
   components: {
-    Logo
+    Navbar
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style scoped>
+  .root-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+  .navbar {
+    position: absolute; 
+    z-index: 1;
+  }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+  .bg-quotes {
+    position: absolute; 
+    left: 196px;
+    top: -120px;
+    z-index: 2;
+    margin: 0;
+    font-size: 25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 600px;
+    color: #B89A0F;
+    opacity: 0.12;
 
-.links {
-  padding-top: 15px;
-}
+  }
+
+  .bg-daily{
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+    left: 854px;
+    top: 230px;
+    font-size: 25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 600px;
+    opacity: 0.12;
+  }
 </style>
